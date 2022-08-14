@@ -10,6 +10,8 @@ interface SliderProps{
 
 let count = 0;
 const imgs = [
+  "https://mdbootstrap.com/img/Photos/Slides/img%20(25).jpg",
+  "https://mdbootstrap.com/img/Photos/Slides/img%20(24).jpg",
   "https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg",
   "https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg",
   "https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg",
