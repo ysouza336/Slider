@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Arrows from './Arrows'
 import Dots from './Dots'
+import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
 
 interface SliderProps{
   arrows: {}
@@ -40,9 +41,9 @@ export default function Slider(props:SliderProps) {
             <Dots onClick={moveDot} className={props.dots} />
       <div className="absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
               {/**Botoes de direçao Arrows*/}
-          <Arrows onClick={handleOnNextClick} className={props.arrows}   />
+        <Arrows onClick={handleOnNextClick} className={props.arrows}><AiOutlineVerticalRight size={30}/></Arrows>   
 
-          <Arrows onClick={handleOnPrevClick} className={props.arrows} />
+        <Arrows onClick={handleOnPrevClick} className={props.arrows}><AiOutlineVerticalLeft size={30}/></Arrows>
       </div>
     </div>
   );
